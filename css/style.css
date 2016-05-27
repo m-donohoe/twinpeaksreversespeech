@@ -1,0 +1,285 @@
+/*
+	
+	Twin Peaks  – Red Room Reverse Speech
+	(http://twinpeaksreversespeech.github.io)
+	
+	Version 1.1, by Martie Donohoe (martiedonohoe@gmail.com)
+	© Copyright 2016-present. All rights reserved.
+	
+	Built using free and open-source software, because an open web is important.
+	Thanks to Bootstrap, FontAwesome, Notepad++, Brackets, GitHub, Mozilla Firefox, Google Chrome and Opera for making it all happen!
+	
+*/
+
+/* Defaults */
+body {
+	overflow:hidden;
+}
+
+body,
+.row-header {
+	background-image:url("../img/background.jpg");
+}
+
+a, a:active,
+.pop .close:hover,
+.warning {
+	color:rgb(240, 91, 91);
+}
+
+ul {
+	list-style:none;
+	display:inline-flex;
+}
+
+li {
+	margin-left:28px;
+}
+
+.container {	
+	width:75%;
+}
+
+/* Header */
+.row-header {
+	background-color:rgb(035, 035, 035);
+	background-blend-mode:soft-light;
+}
+
+.row-header,
+form,
+input[name="revtext"],
+input[name="revtextbutton"] {
+	text-align:center;
+}
+
+.col-header a,
+input[name="revtextbutton"],
+.pop h2 {
+	font-family:"Montserrat";
+}
+
+.col-header a,
+.col-footer,
+.pop .close,
+.warning {
+	font-weight:bold;
+}
+
+.col-header a, 
+input[name="revtextbutton"] {
+	letter-spacing:6px;
+	text-transform:uppercase;
+}
+
+.col-header a {
+	font-size:36px;
+}
+
+.col-header a,
+.col-footer a:hover,
+.pop .close  {
+	text-decoration:none;
+}
+
+.col-header a:hover,
+input[name="revtextbutton"],
+.col-footer,
+.col-footer a:hover {
+	color:rgb(255, 255, 255);
+}
+
+.col-header a,
+.col-header a:hover {	
+	transition:color 1.4s ease-in;
+	-moz-transition:color 1.4s ease-in;
+	-webkit-transition:color 1.4s ease-in;
+	-o-transition:color 1.4s ease-in;
+	-ms-transition:color 1.4s ease-in;
+}
+
+.col-header a:hover {
+	unicode-bidi:bidi-override;
+    direction:rtl;
+	text-decoration:none;
+}
+
+/* Content */
+.col-content {
+	padding-left:0;
+	padding-right:0;
+}
+
+input[name="revtext"],
+.col-footer {
+	width:100%;
+}
+
+input[name="revtextbutton"] {
+	background-color:rgb(50, 50, 50);
+	border:2px solid rgba(255, 255, 255, 0.6);
+}
+
+input[name="revtextbutton"],
+.col-footer-left,
+.col-footer-right {
+	margin-top:10px;
+}
+
+/* Footer */
+.col-footer,
+.overlay {
+	position:fixed;
+	left:0;
+	bottom:0;
+}
+.col-footer {
+   position:fixed;
+   left:0;
+   bottom:0;
+   height:40px;
+   background:rgba(020, 020, 020, 0.8);
+   border-top:2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* IE 6 debug -- */
+* html #footer,
+.pop .close {
+	position:absolute;
+}
+
+* html #footer {
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+/* -- IE 6 debug */
+
+.col-footer,
+#instructions,
+#disclaimer {
+   font-size:12px;
+}
+
+.col-footer-left {
+	float:left;
+}
+
+.col-footer-right,
+.fix {
+	float:right;
+}
+
+.git {
+	margin-top:-4px;
+}
+
+.fa-github {
+	color:rgb(64, 120, 192) !important;
+	font-size:22px !important;
+}
+
+/* Hidden */
+.row-hidden,
+.overlay {
+	visibility:hidden;
+}
+
+.overlay {
+  top:0;
+  right:0;
+  background-color:rgba(000, 000, 000, 0.7);
+  transition:opacity 500ms;
+  -moz-transition:opacity 500ms;
+  -webkit-transition:opacity 500ms;
+  -o-transition:opacity 500ms;
+  -ms-transition:opacity 500ms;
+  opacity:0;
+}
+
+.overlay:target {
+  visibility:visible;
+  opacity:1;
+}
+
+.pop {
+  margin:70px auto;
+  padding:20px;
+  background-color:rgb(255, 255, 255);
+  width:60%;
+  position:relative;
+  transition:all 5s ease-in-out;
+  -moz-transition:all 5s ease-in-out;
+  -webkit-transition:all 5s ease-in-out;
+  -o-transition:all 5s ease-in-out;
+  -ms-transition:all 5s ease-in-out;
+}
+
+.pop h2,
+.pop .close {
+  color:rgb(051, 051, 051);
+}
+
+.pop h2 {
+  margin-top:0;
+}
+
+.pop .close {
+  top:20px;
+  right:30px;
+  transition:all 200ms;
+  -moz-transition:all 200ms;
+  -webkit-transition:all 200ms;
+  -o-transition:all 200ms;
+  -ms-transition:all 200ms;
+  font-size:30px;
+}
+
+.pop .content {
+  max-height:30%;
+  overflow:auto;
+}
+
+#instructions,
+#disclaimer {
+	text-align:justify;
+}
+
+.prewarning {
+	font-size:20px;
+}
+
+/* Responsive Queries */
+@media screen and (max-width:955px) {
+	.col-header a {
+		font-size:24px;
+	}
+}
+
+@media screen and (max-width:792px) {
+	body {
+		background-size:initial;
+	}
+}
+
+@media screen and (max-width:707px) {
+	.col-header a {
+		font-size:18px;
+	}
+}
+
+@media screen and (max-width:588px) {
+	.col-header a {
+		font-size:14px;
+	}
+	
+	input[name="revtextbutton"] {
+		font-size:12px;
+	}
+}
+
+@media screen and (max-width:578px) {
+	.col-footer {
+		font-size:10px;
+	}
+}
+
+/* fin */
