@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<!-- Meta Required -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+		<!-- Meta Basic -->
+		<meta name="description" content="A text/speech-reversal application based on the Red Room from Twin Peaks." />
+		<meta name="keywords" content="Twin Peaks, twin peaks, Fire Walk with Me, fire walk with me, Twin Peaks: Fire Walk with Me, twin peaks: fire walk with me, Twin Peaks Fire Walk with Me, twin peaks fire walk with me, The Red Room, the red room, Red Room, red room, The Waiting Room, the waiting room, Waiting Room, waiting room, The Black Lodge, the black lodge, Black Lodge, black lodge, The White Lodge, the white lodge, White Lodge, white lodge, The Black and White Lodges, the black and white lodges, Black and White Lodges, black and white lodges, Black and White Lodge, black and white lodge, The Little Man from Another Place, the little man from another place, Little Man from Another Place, little man from another place, LMFAP, lmfap, The Man from Another Place, the man from another place, Man from Another Place, man from another place, MFAP, mfap, BOB, bob, Killer BOB, killer bob, Dale Cooper, dale cooper, Special Agent Dale Cooper, special agent dale cooper, backward, backwards, backwards talk, backward talk, reverse, reverse talk, reverse speech, talking backwards, in reverse, generator, David Lynch, david lynch, Mark Frost, mark frost" />
+		<meta name="robots" content="noimageindex" />
+		
+		<!-- Facebook et. al: Open Graph -->
+		<meta property="og:url" content="http://twinpeaksreversespeech.github.io/" />
+		<meta property="og:title" content="Twin Peaks – Red Room Reverse Speech (hceepS esreveR mooR deR)" />
+		<meta property="og:description" content="A text/speech-reversal application based on the Red Room from Twin Peaks." />
+		<meta property="og:type" content="video.tv_show" />
+		
+		<meta property="og:image" content="http://twinpeaksreversespeech.github.io/img/social.jpg" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta property="og:image:width" content="720" />
+		<meta property="og:image:height" content="397" />
+		
+		<!-- Twitter: Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Twin Peaks – Red Room Reverse Speech (hceepS esreveR mooR deR)" />
+		<meta name="twitter:description" content="A text/speech-reversal application based on the Red Room from Twin Peaks." />
+		<meta name="twitter:image" content="http://twinpeaksreversespeech.github.io/img/social.jpg" />
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+		<!-- Scripts -->
+		<script type="text/javascript" src="scripts/reverse.js"></script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-574897201cd5b77f"></script>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script type="text/javascript"  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<!-- Fonts -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+		
+		<!-- Miscellaneous -->
+		<link rel="icon" type="image/ico" href="img/favicon.ico" sizes="16x16 32x32" />
+	
+		<title>Twin Peaks &ndash; Red Room Reverse Speech (hceepS esreveR mooR deR)</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- Header -->
+			<div class="row row-header">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-header">
+					<a href="#">Red Room Reverse Speech</a>
+				</div>
+			</div>
+			
+			<!-- Content -->
+			<div class="row row-content">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-content">
+					<form>
+						<input type="text" value="Where we're from the birds sing a pretty song, and there's always music in the air." name="revtext">
+						<input type="button" value="Let's rock!" name="revtextbutton" onClick="reverse(this.form)">
+					</form>
+										
+					<div class="addthis_sharing_toolbox">
+					</div>
+				</div>
+			</div>
+			
+			<!-- Footer -->
+			<div class="row row-footer">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-footer">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-footer-left">
+							<p>&copy; Copyright 2016&ndash;present &nbsp;<a href="mailto:martiedonohoe@gmail.com">Martie Donohoe</a></p>
+						</div>
+						
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-footer-right">
+							<span class="fix">
+								<ul>
+									<li><a href="#instructions">Instructions</a></li>
+									<li><a href="#disclaimer">Disclaimer</a></li>
+									<li class="git"><a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</span>
+						</div>
+				</div>
+			</div>
+			
+			<!-- Hidden -->
+			<div class="row row-hidden">
+				<div id="instructions" class="overlay">	
+					<div class="pop">
+						<h2>Instructions</h2>
+						<a class="close" href="#">&times;</a>
+						
+						<div class="content">
+							<p>&squf; Type or paste your desired text into the white form.</p>
+							<p>&squf; Click "Let's rock!" to activate the reverse-speech script.</p>
+							<p>&squf; See your text reversed &mdash; cut it, copy it, do what you want with it!</p>
+							<p><span class="prewarning">&excl;</span> <span class="warning">Please ensure JavaScript is enabled and no script-blocking plugins or extensions are active.</span></p>
+						</div>
+					</div>	
+				</div>
+				
+				<div id="disclaimer" class="overlay">	
+					<div class="pop">
+						<h2>Disclaimer</h2>
+						<a class="close" href="#">&times;</a>
+						
+						<div class="content">
+							<p><strong>Twin Peaks &ndash; Red Room Reverse Speech</strong> (<a href="http://twinpeaksreversespeech.github.io/" target="_blank">twinpeaksreversespeech.github.io</a>) is a non-profit web application.</p>
+							<p>It is for educational and entertainment purposes only.</p>
+							<p>It was created, coded, designed (and is still maintained) by Martie Donohoe (<a href="mailto:martiedonohoe@gmail.com" target="_blank">martiedonohoe@gmail.com</a>).</p>
+							<p>It is hosted using GitHub (<a href="https://github.io/" target="_blank">github.io</a>).</p>
+							
+							<hr />
+							
+							<p>Neither the creator nor the host are affiliated with the <cite>Twin Peaks</cite> franchise&mdash;including, but not limited to, the 1990&ndash;1991 television series (<cite>Twin Peaks</cite>), the 1992 motion-picture feature film (<cite>Twin Peaks: Fire Walk with Me</cite>),
+the 2017 television series (<cite>Twin Peaks</cite>) and/or related media including audio recordings, music scores and/or literature&mdash;; the creators of the franchise (David Lynch and Mark Frost); parent companies, subsidiaries, their affiliates and/or employers/employees associated
+either in the past, present and/or future with the creation, financing, production, distribution, sales, advertising, marketing, broadcast and/or promotion of the franchise and all of its related media (including, but not limited to: Lynch/Frost Productions, Propaganda Films, Spelling Television,
+American Broadcasting Company, Showtime, Warner Bros, Republic Pictures, Artisan Entertainment, CBS Corporation, Paramount Home Entertainment, CIBY Pictures, AMLF, New Line Cinema and/or MK2).</p>
+							<p>Titles, names and images pertaining to the <cite>Twin Peaks</cite> franchise are reproduced on <strong>Twin Peaks &ndash; Red Room Reverse Speech</strong> under fair use. Use of said titles, names and images will not hinder the abilities of the copyright holder(s) and/or its(/their) affiliates to continue to profit from the work(s) said titles, names and images reference.</p>
+							<p><strong>&mdash; Last updated: Friday, 27 May 2016 at 15:02 (UTC +00:00)</strong><p>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<!-- fin -->
