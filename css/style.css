@@ -49,7 +49,8 @@ li {
 .row-header,
 form,
 input[name="revtext"],
-input[name="revtextbutton"] {
+input[name="revtextbutton"],
+.addthis_sharing_toolbox {
 	text-align:center;
 }
 
@@ -124,6 +125,15 @@ input[name="revtextbutton"],
 .col-footer-left,
 .col-footer-right {
 	margin-top:10px;
+}
+
+.addthis_sharing_toolbox {
+	float: none;
+	margin:50px auto 0;
+}
+
+.at-share-btn {
+	margin-left:5px;
 }
 
 /* Footer */
